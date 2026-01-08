@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextjs_app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://kietmn:kietdeptrai123@mongodb_container:27017/khucgiaomua?authSource=admin
+    ports:
+      - "3000:3000"
+    networks:
+      - mongo_default
+
+networks:
+  mongo_default:
+    external: true
