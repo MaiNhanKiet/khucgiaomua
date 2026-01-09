@@ -19,8 +19,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Khúc Giao Mùa - Tìm kiếm",
-  description: "Tìm kiếm thông tin bằng số điện thoại - FPTU Cultural Harmony",
+  title: "Khúc Giao Mùa",
+  description: "Khúc Giao Mùa",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="vi">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
