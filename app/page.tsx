@@ -67,7 +67,6 @@ export default function Home() {
         setSearchResult(data.data)
       }
     } catch (err) {
-      console.error("Error searching:", err)
       setError("Đã xảy ra lỗi khi tìm kiếm. Vui lòng thử lại.")
     } finally {
       setIsSearching(false)
